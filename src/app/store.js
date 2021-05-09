@@ -1,8 +1,14 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import photoReducer from 'features/Photo/photoSlice';
+// import userReducer from "./userSlice";
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+const rootReducer = {
+  photos: photoReducer,
+  // user: userReducer,
+}
+
+const store = configureStore({
+  reducer: rootReducer,
 });
+
+export default store;
