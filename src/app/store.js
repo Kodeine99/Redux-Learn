@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import photoReducer from 'features/Photo/photoSlice';
+// import photoReducer from 'features/Photo/photoSlice';
 // import userReducer from "./userSlice";
 
 const rootReducer = {
-  photos: photoReducer,
+  // photos: photoReducer,
   // user: userReducer,
 }
 

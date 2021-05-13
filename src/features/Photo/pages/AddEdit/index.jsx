@@ -1,11 +1,18 @@
 import React from 'react'
+import Banner from '../../../../components/Banner'
+import PhotoForm from '../../components/PhotoForm'
+import './styles.scss'
 
-const index = () => {
+const AddEditPage = () => {
   return (
     <div>
-      <h1>Add photo page</h1>
+      <Banner title="Pick your photo 😎😎😎" />
+
+      <div className="photo-edit__form">
+        <PhotoForm onSubmit={values => console.log("Form submit:", values)} />
+      </div>
     </div>
   )
 }
 
-export default index
+export default AddEditPage
